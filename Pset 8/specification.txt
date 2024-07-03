@@ -1,0 +1,21 @@
+HTML tags:
+- script
+- head
+- link
+- meta
+- body
+- nav
+- div
+- section
+- ul
+- img
+
+CSS properties:
+- margin
+- padding
+- box-sizing
+- position
+- display
+
+Used bootstrap to design navigation bar
+Used javascript to change background color of contact page to blue when you press submit button

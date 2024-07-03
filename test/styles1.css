@@ -1,0 +1,25 @@
+:root {
+    --border_radius: calc(50px * 0.5);
+    --dimension: 50px;
+    --white: white;
+    --backcolor1: #1EA0F3;
+    --backcolor2: #D6D9DB;
+}
+
+.check {
+    border-radius: var(--border_radius);
+    height: var(--dimension);
+    width: var(--dimension);
+    font-size: var(--border_radius);
+    color: var(--white);
+}
+
+
+.check-blue {
+    background-color: var(--backcolor1);
+
+}
+
+.check-official {
+    background-color: var(--backcolor2);
+}

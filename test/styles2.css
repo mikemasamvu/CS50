@@ -1,0 +1,17 @@
+@mixin check($size: 50px) {
+    border-radius: calc($size * 0.5);
+    height: $size;
+    width: $size;
+    font-size: calc($size * 0.5);
+    color: white;
+}
+
+
+.check-blue {
+    background-color: #1EA0F3;
+
+}
+
+.check-official {
+    background-color: #D6D9DB;
+}

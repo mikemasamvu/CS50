@@ -1,0 +1,10 @@
+##
+## A worm
+##
+$the_cow = <<EOC;
+  $thoughts
+   $thoughts   \\
+        \\ /\\
+               __..
+          ____/
+EOC

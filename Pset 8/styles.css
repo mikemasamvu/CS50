@@ -1,0 +1,193 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+ }
+
+.first{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    margin: auto;
+    padding: 0px 100px;
+    position: fixed;
+    align-items: center;
+    background-image: linear-gradient(#033747, #012733);
+    justify-content: space-between;
+}
+
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a: hover{
+    color: #ff8c69;
+    transition: all 0.4s ease 0s;
+}
+
+.second h1{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 80px
+}
+
+span{
+    color: orange;
+}
+
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 5%;
+    right: 100px;
+    justify-content: space-between;
+}
+
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image ul{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px
+}
+
+.about{
+  width: 100%;
+  padding: 78px 0px;
+  background-color: white;
+}
+
+.about img{
+    height: auto;
+    width: 420px;
+}
+
+.about-me{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me h1{
+    color: black;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-me h5{
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.about-me p{
+    color: grey;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    padding: 10px;
+    margin: 100px auto;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid tomato;
+}
+form{
+    width: 260px;
+    margin: 20px 37px;
+    text-align: center;
+}
+h1{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+input, textarea{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid tomato;
+}
+button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 7px;
+    background: tomato;
+}
+button: over{
+    background: rgba(131, 66, 66, 0.9);
+    transition: all 0.4s ease 0s;
+}
+
+
+i{
+    display: inline-block;
+    width: 30px;
+}
+

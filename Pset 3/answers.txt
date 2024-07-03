@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: it had averagely longest runtimes compared to the other two sorts. However, it had a relatively small average runtime for sorted text. This means its bubble sort as it has different lower and upper bound runtimes.
+
+sort2 uses: merge sort
+
+How do you know?: it had the lowest runtime of all the three sorts. Merge sort has O(nlogn) which means it executes the fastest of the three.
+
+sort3 uses: selection sort
+
+How do you know?: its average runtime was greater than sort2 but smaller than sort1. It performed almost similarly on both sorted and reversed texts which implies that it as the same upper and lowerbound runtimes. 

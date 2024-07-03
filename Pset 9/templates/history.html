@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+<form action="/" method="get">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Status</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for info in company_info %}
+            <tr>
+                <td>{{ info["symbol"] }}</td>
+                <td>{{ info["(shares)"] }}</td>
+                <td>{{ info["money_transacted"] }}</td>
+                <td>{{ info["status"] }}</td>
+                <td>{{ info["date"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</form>
+{% endblock %}

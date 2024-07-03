@@ -1,0 +1,1 @@
+Find the average of each song's energy, valence and danceability and then you divide by 100

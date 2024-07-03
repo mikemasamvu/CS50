@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="get">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Name</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td>{{ total }}</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                {% for info in company_info %}
+                <tr>
+                    <td>{{ info["symbol"] }}</td>
+                    <td>{{ info["name"] }}</td>
+                    <td>{{ info["SUM(shares)"] }}</td>
+                    <td>{{ info["price"] }}</td>
+                    <td>{{ info["total"] }}</td>
+                </tr>
+                {% endfor %}
+            <tr>
+                <td colspan="4">Cash</td>
+                <td>{{ cash }}</td>
+            </tr>
+            </tbody>
+
+        </table>
+    </form>
+{% endblock %}

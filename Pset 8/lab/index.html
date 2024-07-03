@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+
+            let no = document.querySelectorAll('.no');
+
+            for (let i = 0; i < no.length; i++){
+                no[i].addEventListener('click', function(){
+                    no[i].style.backgroundColor = 'Red';
+                    no[i].parentElement.querySelector('.feedback').innerHTML = 'Incorrect!';
+                })
+            }
+
+            let yes = document.querySelectorAll('.yes');
+            for (let i = 0; i < yes.length; i++){
+                yes[i].addEventListener('click', function(){
+                    yes[i].style.backgroundColor = 'Green';
+                    yes[i].parentElement.querySelector('.feedback').innerHTML = 'Correct!';
+                })
+            }
+
+            document.querySelector('#confirm').addEventListener('click', function() {
+                let user = document.querySelector('input');
+                if (user.value === 'Victoria Falls') {
+                    user.style.backgroundColor = 'green';
+                    user.parentElement.querySelector('.feedback').innerHTML = 'Correct!';
+                }
+                else {
+                    user.style.backgroundColor = 'red';
+                    user.parentElement.querySelector('.feedback').innerHTML = 'Incorrect!';
+                }
+            })
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which of the following is an African country?</h3>
+                <button id="no" type="button">United States</button>
+                <button id="no" type="button">United Kingdom</button>
+                <button id="yes" type="button">Zimbabwe</button>
+                <button id="no" type="button">Poland</button>
+                <p class="feedback"></p>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Name the largest natural falls in Zimbabwe?</h3>
+                <input autofocus placeholder="Response" type="text" >
+                <button id='confirm' type="button">Confirm</button>
+                <p class="feedback"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+        </div>
+    </body>
+</html>
